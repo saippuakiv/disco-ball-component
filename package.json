@@ -1,0 +1,18 @@
+{
+  "name": "disco-ball-component",
+  "version": "1.0.0",
+  "description": "Interactive 3D disco ball component",
+  "keywords": [
+    "react",
+    "three.js",
+    "3d",
+    "disco-ball",
+    "interactive"
+  ],
+  "author": "saippuakiv",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "@react-three/fiber": "^8.0.0",
+    "three": "^0.150.0"
+  }
+}
