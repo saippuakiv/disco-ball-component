@@ -2,8 +2,8 @@ import { Canvas } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useEffect, useRef, useState } from 'react';
 
-const TILE_COUNT_X = 12;
-const TILE_COUNT_Y = 8;
+const TILE_COUNT_X = 24;
+const TILE_COUNT_Y = 16;
 const TILE_SIZE = 32;
 const SIZE_X = TILE_COUNT_X * TILE_SIZE;
 const SIZE_Y = TILE_COUNT_Y * TILE_SIZE;
@@ -26,9 +26,6 @@ function useDynamicBrickTexture() {
     texture.colorSpace = THREE.SRGBColorSpace;
     texture.magFilter = THREE.NearestFilter;
     texture.minFilter = THREE.NearestFilter;
-    texture.wrapS = THREE.RepeatWrapping;
-    texture.wrapT = THREE.RepeatWrapping;
-    texture.repeat.set(2, 2);
     textureRef.current = texture;
 
     const draw = () => {
